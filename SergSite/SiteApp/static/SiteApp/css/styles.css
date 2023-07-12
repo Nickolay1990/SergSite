@@ -1,0 +1,25 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.div-for-links{
+    padding: 10px;
+}
+
+.p-for-link-name{
+    display: flex;
+    justify-content: center;
+
+}

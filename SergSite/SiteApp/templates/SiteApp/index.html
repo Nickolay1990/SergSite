@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'SiteApp/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% for link in links %}
+            <div class="div-for-links">
+                <a href="{{ link.url }}">
+                    <img src="{{ link.image.url }}">
+                    <p class="p-for-link-name">{{ link }}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
